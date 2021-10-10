@@ -25,7 +25,7 @@ Với cộng đồng mã nguồn mở phát triển như vũ bão ngày nay, v�
 
 Đối với các script language như Javascript, PHP, python... với dặc điểm mỗi lần chạy là một lần **thông** dịch thì có vẻ không gặp trở ngại gì chỉ việc dùng một thằng callback hay closure là xong cái này mình sẽ nói đến vào một ngày đẹp trời không xa. với java câu chuyện có vẻ không dễ dàng như thế, java 8 mới ra mắt tính năng [Thinking](http://www.linuxtopia.org/online_books/programming_books/thinking_in_java/TIJ310_019.htm) cho phép cài đặt callback & closure một cách khá dễ dàng còn các ver thấp hơn thì không có cái gì tương tự cả, mình thì gà java nên cũng thấy vụ này hơi khoai.
 
-![application architecture](application-architecture.png)
+![application architecture](https://minhlucvan.github.io/2016/08/06/viet-mot-chuong-trinh-cho-phep-cai-plugin-trong-java-nhu-the-nao/application-architecture.png)
 
 Về cơ bản để có thể cắm được plugin thì ứng dụng phải có kiến trúc đơn giản nhất như trong hình trên, hai thành phần cơ bản đó là application core và plugin manager:
 	- **application core:** thằng này là ứng dụng chủ có nhiệm bụ bào đảm logic của hệ thống, thực hiện các tác vụ và hook (gọi) các plugin thực hiện nhiệm vụ của mình trong runtime.
@@ -39,7 +39,7 @@ Hì, mình giải thích củ chuối quá chắc ko ai hiểu nổi nhỉ. đ�
 
 Ở ví dụ này mình sẽ tạo một ứng dụng đơn giẩn với đầu vào là 1 số, các plugin sẽ đưọc thêm vào đê chế biến số đó để đưa ra kết quả cuối cùng cộng trừ nhân chia gì đó. 
 
-Ok, đầu tiên chúng ta phải có một thằng interface chung cho các plugins. tạm gọi là ``PluginFunction.java`` đi.
+Ok, đầu tiên chúng ta phải có một thằng interface chung cho các plugins. tạm gọi là `PluginFunction.java` đi.
 
 ```java
 public interface PluginFunction {
@@ -58,7 +58,8 @@ public interface PluginFunction {
 	public boolean hasError();
 }
 ```
-Tiếp theo ta phải có một cái main để chạy logic của ứng dụng và gọi các plugin, ta gọi là ``PluginDemo.java`` chứa hàm main.
+
+Tiếp theo ta phải có một cái main để chạy logic của ứng dụng và gọi các plugin, ta gọi là `PluginDemo.java` chứa hàm main.
 
 ```java
 import java.io.File;
@@ -150,14 +151,13 @@ public class PluginDemo {
 		}
 	}
 }
-
 ```
-Ta thấy trong hàm ``getPlugins`` có một vòng for để load hết các class mà có interface là ``PluginFunction`` rồi tạo ra một thực thể của class đó và lưu vào mảng ``plugins``. Sau đó hàm ``runPlugins`` sẽ duyệt qua tất cả cảc plugins set tham số chạy hàm run của từng plugin và in ra kết quả.
 
-Ngoài ra hàm ``getPlugins`` còn có một điều thú vị nữa chính là dòng setSecurityManager, vì đây là các plugins độc lập với hệ thống nên ta phhair xét quền hạn cho nó chứ nhỡ thanh niên nào vui tính lại cho cái plugin xóa hết hệ điều hành thì chỉ biết ngồi đấy mà khóc thôi 😭.
+Ta thấy trong hàm `getPlugins` có một vòng for để load hết các class mà có interface là `PluginFunction` rồi tạo ra một thực thể của class đó và lưu vào mảng `plugins`. Sau đó hàm `runPlugins` sẽ duyệt qua tất cả cảc plugins set tham số chạy hàm run của từng plugin và in ra kết quả.
 
+Ngoài ra hàm `getPlugins` còn có một điều thú vị nữa chính là dòng setSecurityManager, vì đây là các plugins độc lập với hệ thống nên ta phhair xét quền hạn cho nó chứ nhỡ thanh niên nào vui tính lại cho cái plugin xóa hết hệ điều hành thì chỉ biết ngồi đấy mà khóc thôi 😭.
 
-Đây là nội dung file ``PluginSecurityManager.java``
+Đây là nội dung file `PluginSecurityManager.java`
 
 ```java
 import java.io.File;
@@ -268,10 +268,9 @@ public class PluginSecurityManager extends SecurityManager {
 }
 ```
 
-Ngoài ra ta còn cần 1 cái loader để load các plugins ra nữa ``PluginClassLoader.java``
+Ngoài ra ta còn cần 1 cái loader để load các plugins ra nữa `PluginClassLoader.java`
 
 ```java
-
 import java.io.*;
 
   /**
@@ -360,9 +359,9 @@ public class PluginClassLoader extends ClassLoader {
 }
 ```
 
-Haiz, về cơ bản hệ thống setup thế là xong, tiếp theo ta sẽ cần 1 2 cái plugins để test thủ xem nó có chạy ổn không, ta sẽ đặt các file này trong thư mục ``plugins``.
+Haiz, về cơ bản hệ thống setup thế là xong, tiếp theo ta sẽ cần 1 2 cái plugins để test thủ xem nó có chạy ổn không, ta sẽ đặt các file này trong thư mục `plugins`.
 
-``Square.java`` tình bình phưng của tham số:
+`Square.java` tình bình phưng của tham số:
 
 ```java
 /**
@@ -392,7 +391,7 @@ public class Square implements PluginFunction {
 }
 ```
 
-``PlusOne.java`` cộng 1 đơn vị vào tham số:
+`PlusOne.java` cộng 1 đơn vị vào tham số:
 
 ```java
 /**
@@ -421,7 +420,8 @@ public class PlusOne implements PluginFunction {
 	}
 }
 ```
-``TryToExit.java`` thử cho thanh niên này lạm quền tý xem có đưọc không, trong ``PluginSecurityManager`` ta đã set không cho plugin thoát chương trình rồi.
+
+`TryToExit.java` thử cho thanh niên này lạm quền tý xem có đưọc không, trong `PluginSecurityManager` ta đã set không cho plugin thoát chương trình rồi.
 
 ```java
 /**
@@ -452,7 +452,6 @@ public class TryToExit implements PluginFunction {
 }
 ```
 
-
 Tiếp theo là dịch và chạy thử, nếu không có gì sai thì sẽ thu được output như này, mình dùng java 8 nên có phun ra mấy cái Note, thôi kệ dù sao nó vẫn chạy được :D:
 
 ```shell
@@ -472,4 +471,4 @@ Thực ra toppic này còn thêm vấn đề nữa là build ra file jar và cà
 Xin chân thành cảm ơn bộ code mẫu của [@Ulf Dittmer](http://www.javaranch.com/contact.jsp#UlfDittmer), các bạn code thể [download](Plugin.zip) code dể tham khảo.
 
 Phùu... cảm ơn ae đã theo dõi đến tận đây, bài đã dài tay quay đã mỏi mình xin phép dừng phím tại đây. chúc ae cuối tuần vui vẻ.
-xin chào thân ái và quết thắng. 
+xin chào thân ái và quết thắng.
