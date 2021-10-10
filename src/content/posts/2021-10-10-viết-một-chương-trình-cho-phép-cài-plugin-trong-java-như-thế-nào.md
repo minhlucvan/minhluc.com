@@ -9,6 +9,7 @@ description: Nói thế chứ plugin chắc không lạ gì rồi, điển hình
   plugin ra kiểm ra đầu tiên. một cách đơn giản thì Plugin chính là một bộ phần
   mềm cài đặt để hỗ trợ, mở rộng chức năng cho một phần mềm ứng dụng lớn hơn,
   dựa trận nhưng giao thức và API do phần mềm lớn cung cấp.
+featuredImage: https://minhlucvan.github.io/2016/08/06/viet-mot-chuong-trinh-cho-phep-cai-plugin-trong-java-nhu-the-nao/plugin.png
 ---
 # plugin là khỉ gì?
 
