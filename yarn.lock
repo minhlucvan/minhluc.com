@@ -1854,16 +1854,6 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@pieh/friendly-errors-webpack-plugin@1.7.0-chalk-2":
-  version "1.7.0-chalk-2"
-  resolved "https://registry.yarnpkg.com/@pieh/friendly-errors-webpack-plugin/-/friendly-errors-webpack-plugin-1.7.0-chalk-2.tgz#2e9da9d3ade9d18d013333eb408c457d04eabac0"
-  integrity sha512-65+vYGuDkHBCWWjqzzR/Ck318+d6yTI00EqII9qe3aPD1J3Olhvw0X38uM5moQb1PK/ksDXwSoPGt/5QhCiotw==
-  dependencies:
-    chalk "^2.4.2"
-    error-stack-parser "^2.0.0"
-    string-width "^2.0.0"
-    strip-ansi "^3"
-
 "@pmmmwh/react-refresh-webpack-plugin@^0.4.3":
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/@pmmmwh/react-refresh-webpack-plugin/-/react-refresh-webpack-plugin-0.4.3.tgz#1eec460596d200c0236bf195b078a5d1df89b766"
@@ -1933,6 +1923,16 @@
   dependencies:
     escape-string-regexp "^2.0.0"
     lodash.deburr "^4.1.0"
+
+"@soda/friendly-errors-webpack-plugin@1.8.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@soda/friendly-errors-webpack-plugin/-/friendly-errors-webpack-plugin-1.8.0.tgz#84751d82a93019d5c92c0cf0e45ac59087cd2240"
+  integrity sha512-RLotfx6k1+nfLacwNCenj7VnTMPxVwYKoGOcffMFoJDKM8tXzBiCN0hMHFJNnoAojduYAsxuiMm0EOMixgiRow==
+  dependencies:
+    chalk "^2.4.2"
+    error-stack-parser "^2.0.2"
+    string-width "^2.0.0"
+    strip-ansi "^5"
 
 "@styled-system/background@^5.1.2":
   version "5.1.2"
@@ -5135,7 +5135,7 @@ error-ex@^1.2.0, error-ex@^1.3.1:
   dependencies:
     is-arrayish "^0.2.1"
 
-error-stack-parser@^2.0.0, error-stack-parser@^2.0.6:
+error-stack-parser@^2.0.2, error-stack-parser@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/error-stack-parser/-/error-stack-parser-2.0.6.tgz#5a99a707bd7a4c58a797902d48d82803ede6aad8"
   integrity sha512-d51brTeqC+BHlwF0BhPtcYgF5nlzf9ZZ0ZIUQNZpc9ZB9qw5IJ2diTrBY9jlCJkTLITYPjmiX6OWCwH+fuyNgQ==
@@ -6203,19 +6203,21 @@ gatsby-plugin-netlify-cms-paths@^1.3.0:
     slash "^3.0.0"
     unist-util-select "^1.5.0"
 
-gatsby-plugin-netlify-cms@5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-5.1.0.tgz#2423d5d3dbffc7f30576ff7680839dedf300b7c4"
-  integrity sha512-7lUY+h2y+ucBOBV0JsGZ9L/MfaSFka3FeDHI+bWzHeyIUUGkb7+CDw0LopQYfiPdqaxzY3J8BGF8zVzUBnBHqg==
+gatsby-plugin-netlify-cms@^5.14.0:
+  version "5.14.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-5.14.0.tgz#26ec6202d6bc5c48af063d6165f11edf2a3086c9"
+  integrity sha512-Yf7nDaEMuzE8dvWx6pmmLjuLHctb67CtaV297zbPFPg46Dg4rXOER+zZqzO9HCla2ylSiRc3h/KJy4B4Thhb0A==
   dependencies:
-    "@pieh/friendly-errors-webpack-plugin" "1.7.0-chalk-2"
+    "@babel/runtime" "^7.15.4"
+    "@soda/friendly-errors-webpack-plugin" "1.8.0"
     copy-webpack-plugin "^7.0.0"
-    html-webpack-plugin "^5.2.0"
-    html-webpack-tags-plugin "^3.0.0"
+    html-webpack-plugin "^5.3.2"
+    html-webpack-skip-assets-plugin "^1.0.2"
+    html-webpack-tags-plugin "^3.0.1"
     lodash "^4.17.21"
-    mini-css-extract-plugin "1.3.9"
-    netlify-identity-widget "^1.9.1"
-    webpack "^5.23.00"
+    mini-css-extract-plugin "1.6.2"
+    netlify-identity-widget "^1.9.2"
+    webpack "^5.35.0"
 
 gatsby-plugin-offline@^4.1.0:
   version "4.14.0"
@@ -6520,7 +6522,7 @@ gatsby-worker@^0.5.0:
     "@babel/core" "^7.15.5"
     "@babel/runtime" "^7.15.4"
 
-gatsby@^3.1.2:
+gatsby@^3.14.2:
   version "3.14.2"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-3.14.2.tgz#684a49ed9521abe5e72ff36b1fc3a4ed96fee0fb"
   integrity sha512-1cjyfGkQ9zXtou+RhtYBprv8nYXTPuRIs4IFzBP373vBD1CdwabAC/R8kjqHfdvyNrorzg3sqRjLjActtfU8NA==
@@ -7426,7 +7428,7 @@ html-void-elements@^1.0.0, html-void-elements@^1.0.1:
   resolved "https://registry.yarnpkg.com/html-void-elements/-/html-void-elements-1.0.5.tgz#ce9159494e86d95e45795b166c2021c2cfca4483"
   integrity sha512-uE/TxKuyNIcx44cIWnjr/rfIATDH7ZaOMmstu0CwhFG1Dunhlp4OC6/NMbhiwoq5BpW0ubi303qnEk/PZj614w==
 
-html-webpack-plugin@^5.2.0:
+html-webpack-plugin@^5.3.2:
   version "5.3.2"
   resolved "https://registry.yarnpkg.com/html-webpack-plugin/-/html-webpack-plugin-5.3.2.tgz#7b04bf80b1f6fe84a6d3f66c8b79d64739321b08"
   integrity sha512-HvB33boVNCz2lTyBsSiMffsJ+m0YLIQ+pskblXgN9fnjS1BgEcuAfdInfXfGrkdXV406k9FiDi86eVCDBgJOyQ==
@@ -7437,7 +7439,14 @@ html-webpack-plugin@^5.2.0:
     pretty-error "^3.0.4"
     tapable "^2.0.0"
 
-html-webpack-tags-plugin@^3.0.0:
+html-webpack-skip-assets-plugin@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/html-webpack-skip-assets-plugin/-/html-webpack-skip-assets-plugin-1.0.2.tgz#02c980309744cc294ae49ab000c8ebf9307555b1"
+  integrity sha512-/dYN+7J+Z99LgWELloJq1Dn98JEfe1v/LvI67kLBovdsO+jiDWtHHKrrE/JsKfyP0we7KULFqhHrPNSNKlq+vA==
+  dependencies:
+    minimatch "3.0.4"
+
+html-webpack-tags-plugin@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/html-webpack-tags-plugin/-/html-webpack-tags-plugin-3.0.1.tgz#52baf2feec879a4108e6955b4e81376581a334dc"
   integrity sha512-P/cfYDqXtgXoGFUv8zi/er8XFU5ztQmqp+VwmnhZEH8L35Q2YRKIb9P+dRiykLIDZF0NMt+l/uj+jmttKwmLvg==
@@ -9409,15 +9418,6 @@ mini-create-react-context@^0.4.0:
     "@babel/runtime" "^7.12.1"
     tiny-warning "^1.0.3"
 
-mini-css-extract-plugin@1.3.9:
-  version "1.3.9"
-  resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-1.3.9.tgz#47a32132b0fd97a119acd530e8421e8f6ab16d5e"
-  integrity sha512-Ac4s+xhVbqlyhXS5J/Vh/QXUz3ycXlCqoCPpg0vdfhsIBH9eg/It/9L1r1XhSCH737M1lqcWnMuWL13zcygn5A==
-  dependencies:
-    loader-utils "^2.0.0"
-    schema-utils "^3.0.0"
-    webpack-sources "^1.1.0"
-
 mini-css-extract-plugin@1.6.2:
   version "1.6.2"
   resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-1.6.2.tgz#83172b4fd812f8fc4a09d6f6d16f924f53990ca8"
@@ -9890,7 +9890,7 @@ netlify-cms-widget-text@^2.3.6:
   dependencies:
     react-textarea-autosize "^8.0.0"
 
-netlify-identity-widget@^1.9.1:
+netlify-identity-widget@^1.9.2:
   version "1.9.2"
   resolved "https://registry.yarnpkg.com/netlify-identity-widget/-/netlify-identity-widget-1.9.2.tgz#4339c9155fc4c2570ae3ddd61825d952b574b02e"
   integrity sha512-IbS1JHhs7BflCCvp3C9f6tmNSZqbyBhZ4Gs5+Qxt4IlPybTOVv0PqJ4TAsA7uxh1R+oXOAmk0OOMAkEaPYeCtA==
@@ -13297,7 +13297,7 @@ strip-ansi@6.0.0:
   dependencies:
     ansi-regex "^5.0.0"
 
-strip-ansi@^3, strip-ansi@^3.0.0, strip-ansi@^3.0.1:
+strip-ansi@^3.0.0, strip-ansi@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-3.0.1.tgz#6a385fb8853d952d5ff05d0e8aaf94278dc63dcf"
   integrity sha1-ajhfuIU9lS1f8F0Oiq+UJ43GPc8=
@@ -13311,7 +13311,7 @@ strip-ansi@^4.0.0:
   dependencies:
     ansi-regex "^3.0.0"
 
-strip-ansi@^5.0.0, strip-ansi@^5.1.0, strip-ansi@^5.2.0:
+strip-ansi@^5, strip-ansi@^5.0.0, strip-ansi@^5.1.0, strip-ansi@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-5.2.0.tgz#8c9a536feb6afc962bdfa5b104a5091c1ad9c0ae"
   integrity sha512-DuRs1gKbBqsMKIZlrffwlug8MHkcnpjs5VPmL1PAh+mA30U0DTotfDZ0d2UUsXpPmPmMMJ6W773MaA3J+lbiWA==
@@ -14607,7 +14607,7 @@ webpack-virtual-modules@^0.3.2:
   dependencies:
     debug "^3.0.0"
 
-webpack@^5.23.00, webpack@^5.35.0:
+webpack@^5.35.0:
   version "5.58.1"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.58.1.tgz#df8aad72b617a9d0db8c89d4f410784ee93320d7"
   integrity sha512-4Z/dmbTU+VmkCb2XNgW7wkE5TfEcSooclprn/UEuVeAkwHhn07OcgUsyaKHGtCY/VobjnsYBlyhKeMLiSoOqPg==
