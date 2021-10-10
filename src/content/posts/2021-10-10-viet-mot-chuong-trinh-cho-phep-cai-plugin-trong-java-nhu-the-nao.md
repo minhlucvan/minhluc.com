@@ -1,7 +1,7 @@
 ---
 template: blog-post
 title: viết một chương trình cho phép cài plugin trong java như thế nào?
-slug: viet-mot-chuong-trinh-cho-phep-cai-plugin-trong-java-nhu-the-nao
+slug: /viet-mot-chuong-trinh-cho-phep-cai-plugin-trong-java-nhu-the-nao
 date: 2016-08-06 19:08
 description: Nói thế chứ plugin chắc không lạ gì rồi, điển hình như các thể loại
   trình duyệt phổ biến như Chrome, Firefox, Opera kiểu gì mỗi cái chả cài một
@@ -9,8 +9,9 @@ description: Nói thế chứ plugin chắc không lạ gì rồi, điển hình
   plugin ra kiểm ra đầu tiên. một cách đơn giản thì Plugin chính là một bộ phần
   mềm cài đặt để hỗ trợ, mở rộng chức năng cho một phần mềm ứng dụng lớn hơn,
   dựa trận nhưng giao thức và API do phần mềm lớn cung cấp.
-featuredImage: https://minhlucvan.github.io/2016/08/06/viet-mot-chuong-trinh-cho-phep-cai-plugin-trong-java-nhu-the-nao/plugin.png
+featuredImage: /assets/plugin.png
 ---
+
 # plugin là khỉ gì?
 
 Nói thế chứ plugin chắc không lạ gì rồi, điển hình như các thể loại trình duyệt phổ biến như Chrome, Firefox, Opera kiểu gì mỗi cái chả cài một đống plugin đến khi trình duyệt có gì bất thường lại chả lôi đầu mấy thằng plugin ra kiểm ra đầu tiên. một cách đơn giản thì Plugin chính là một bộ phần mềm cài đặt để hỗ trợ, mở rộng chức năng cho một phần mềm ứng dụng lớn hơn, dựa trận nhưng giao thức và API do phần mềm lớn cung cấp.
