@@ -1,6 +1,8 @@
 import defaultColors from "../util/default-colors.json"
 import darkColors from "../util/dark-theme-colors.json"
 import { lightness } from "@theme-ui/color"
+import toTailwind from '@theme-ui/tailwind'
+
 const theme = {
   colors: {
     ...defaultColors,
@@ -68,4 +70,4 @@ const theme = {
   },
 }
 
-export default theme
+export default toTailwind(theme)

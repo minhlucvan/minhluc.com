@@ -39,6 +39,19 @@ collections:
           hint: "Start slug with /. Use only alphanumeric characters, - and _. Avoid spaces in any cases.",
         }
       - {
+          label: "Tags",
+          name: "tags",
+          widget: "list",
+          hint: "Blog post tags",
+        }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "select",
+          hint: "Blog post category",
+          options: ["Công nghệ", "Quan điểm", "Crypto", "Đầu tư"]
+        }
+      - {
           label: "Publish Date",
           name: "date",
           widget: "datetime",

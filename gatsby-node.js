@@ -15,13 +15,38 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             frontmatter {
               slug
               template
-              title
+              title,
+              tags,
+              categories,
             }
           }
         }
       }
     }
   `)
+
+  const posts = result.data.allMarkdownRemark.edges
+
+  const tagsMap = {};
+
+  for (const post of posts) {
+    const { frontmatter } = post.node;
+    const { tags } = frontmatter;
+
+    if (tags) {
+      for (const tag of tags) {
+        if (!tagsMap[tag]) {
+          tagsMap[tag] = {
+            tag,
+            posts: []
+          }
+        }
+        tagsMap[tag].posts.push(post);
+      }
+    }
+  }
+
+  const tags = Object.values(tagsMap);
 
   // Handle errors
   if (result.errors) {
@@ -30,7 +55,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
 
   // Create markdown pages
-  const posts = result.data.allMarkdownRemark.edges
   let blogPostsCount = 0
 
   posts.forEach((post, index) => {
@@ -73,6 +97,41 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       },
     })
   })
+
+  // create blog-tags pages
+  const blogTags = path.resolve(`./src/templates/blog-tags.js`)
+
+  createPage({
+    path: '/blog/tags',
+    component: blogTags,
+    context: {
+      tags,
+    }
+  })
+
+  // create blog-tag pages
+  const blogTag = path.resolve(`./src/templates/blog-tag.js`)
+
+  for (const tag of tags) {
+    const blogPostsTagCount = tag.posts.length;
+    const numPages = Math.ceil(blogPostsTagCount / postsPerPage)
+
+    Array.from({ length: numPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? `/blog/tags/${tag.tag}` : `/blog/tags/${tag.tag}/${i + 1}`,
+        component: blogTag,
+        context: {
+          tag: tag.tag,
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          numPages,
+          currentPage: i + 1,
+        },
+      })
+    })
+
+  }
+
 }
 
 exports.onCreateNode = ({ node, getNode, actions }) => {

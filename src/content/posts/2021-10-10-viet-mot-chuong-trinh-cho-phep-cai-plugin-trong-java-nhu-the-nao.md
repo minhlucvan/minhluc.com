@@ -2,6 +2,8 @@
 template: blog-post
 title: viết một chương trình cho phép cài plugin trong java như thế nào?
 slug: /viet-mot-chuong-trinh-cho-phep-cai-plugin-trong-java-nhu-the-nao
+tags: ["java", "code", "design_partern", "code4fun"]
+categories: ["phần mềm"]
 date: 2016-08-06 19:08
 description: Nói thế chứ plugin chắc không lạ gì rồi, điển hình như các thể loại
   trình duyệt phổ biến như Chrome, Firefox, Opera kiểu gì mỗi cái chả cài một

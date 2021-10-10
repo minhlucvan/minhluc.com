@@ -2115,6 +2115,11 @@
     "@emotion/react" "^11.1.1"
     "@theme-ui/css" "^0.6.2"
 
+"@theme-ui/tailwind@^0.11.3":
+  version "0.11.3"
+  resolved "https://registry.yarnpkg.com/@theme-ui/tailwind/-/tailwind-0.11.3.tgz#8e1829d8f186a96fc76d70cc6c4aefe7b4753c05"
+  integrity sha512-Qb0Xc4lL/K70TII+YUldUsdYIx2TxfuT9jymXM6Kh4AFKWZw4ht2mJhxZUBb7rf8FONHdG6vIcMuEeTSvbIYgw==
+
 "@theme-ui/theme-provider@^0.6.2":
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/@theme-ui/theme-provider/-/theme-provider-0.6.2.tgz#764a983adf8f226cc1f97020a68db34539736cb9"
