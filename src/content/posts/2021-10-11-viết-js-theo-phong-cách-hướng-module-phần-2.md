@@ -18,7 +18,6 @@ description: Tiếp nối series về java module hóa trong javascript hôm nay
 featuredImage: /assets/module2.jpeg
 ---
 Tiếp nối series về java module hóa trong javascript hôm nay chúng ta sẽ đề cập đến một đề cũng rất quan trọng đó chính là bundeling. Với nodejs hoặc một số framework font-end như Angular 2, React dều recommend viết hướng module và chia ra nhiều file khác nhau đến khi build các file sẽ được gộp lại một file duy nhất và thực thi, còn với các úng dụng tự xây dựng thì sao?. bài viết này sẽ đề cập đến vấn sử dụng browersify và babel để module hóa ứng dụng ra từng file và build lại để dược một ứng dụng hoàn chỉnh, like a boss :D.
-<!--more-->
 
 ## Bundling là gì
 
@@ -29,10 +28,11 @@ Bundling thực sự rất có ý nghĩa nhất là với các ứng dụng có 
 ## Một số  cách Bundling
 
 ### link trực tiếp
+
 Cách đơn gian nhất chính là cứ  viết mỗi module một file rồi link từng file vào trang HTML, cách này nói chung khá là bất tiện mỗi khi thêm một module ta lại phải mở trang HTML thêm thêm sửa sửa vừa dễ nhầm vừa mất thơi gian.
 
 Rồi đến khi thay dổi tên module hay đường dẫn thì câu chuyện kinh dị lại tiếp tục, dev lại phải hì hục sửa sửa xóa xóa :(.
- 
+
 Còn chưa kể cách này thực sự không tốt khi xét đến hiệu năng, số lượng module càng lớn thì số request mà trang thực hiện cũng tăng tho dẫn đến tóc độ load trang sé trở nên rất sờ lâu.
 
 ### sử dụng require.js
@@ -41,7 +41,7 @@ Còn chưa kể cách này thực sự không tốt khi xét đến hiệu năng
 
 ### sử dụng webpack
 
-Và rồi Nodejs ra đời với [commonjs]() (một version của requirejs chạy trên node) và [systemjs](https://github.com/systemjs/systemjs) một module loader khác hỗ trợ ES6, đàu tiền các công cụ module loader này tạo ra để phục cụ ứng dụng Nodejs server side nhưng về bạn chất ứng dụng backend hay front end viết bằng js là hoàn taonf giống nhau và hoàn oàn có thể dùng các module loader này đề build ứng dụng front-end giống như làm với back-end vậy.
+Và rồi Nodejs ra đời với [commonjs](<>) (một version của requirejs chạy trên node) và [systemjs](https://github.com/systemjs/systemjs) một module loader khác hỗ trợ ES6, đàu tiền các công cụ module loader này tạo ra để phục cụ ứng dụng Nodejs server side nhưng về bạn chất ứng dụng backend hay front end viết bằng js là hoàn taonf giống nhau và hoàn oàn có thể dùng các module loader này đề build ứng dụng front-end giống như làm với back-end vậy.
 
 Như mình đã giới thiệu ở một bài viết trước đây webpack là  một cộng cụ build tuyệt vời cho front end app hôm nay a sẽ sử dụng webpack kết hợp với mọt công cụ là babelfy để chuyển cú pháp ES6 về ES5.
 
@@ -52,43 +52,47 @@ Bỏ qua mớ lý thuyết xuông đi, hôm nay mình sẽ làm 1 ví dụ chỉ
 Mình sẽ làm 1 ứng dụng gồm hiện thị ra màn hình 3 vận thể 1 quả bóng, một khối hộp và một chú cún, 3 vật thể này sẽ được gắn ngẫu nhiên 3 hành động blink (nhấp nháy ), bounce (nảy) và spin (xoay). cơ bản là thế điều quan trọng là mỗi một class ta sẽ viết trên 1 file.
 
 ### Chuẩn bị
-- Đầu tiên ta phải có nodejs và npm, tất nhiên rồi :)
-- Tiếp theo là cài wpebpack:
+
+* Đầu tiên ta phải có nodejs và npm, tất nhiên rồi :)
+* Tiếp theo là cài wpebpack:
 
 ```shell
 npm i -g ưebpack
 ```
 
--tạo thư mục ``demo`` và khởi tạo npm project trong thư mục này.
+\-tạo thư mục `demo` và khởi tạo npm project trong thư mục này.
 
 Cài babel-loader và babel-presents-es2015  để dịch ES6
 
 ```shell
 npm install --save-dev  babel-loader babel-preset-es2015
 ```
+
 ### OK, Let's go
 
 tiếp theo tạo các file và thư mục của project như sau:
-- xxx/demo
-	- package.json
-	- webpack.config.js
-	- node_modules (binary root)
-	- src
-		- app.js
-		- behavior
-			- action.js
-			- blink.js
-			- spin.js
-		- body
-			- body.js
-			- circle.js
-			- square.js
-			- dog.js
-	- dest
-		- dog.png
-		- index.html
 
-Webpack sử dụng file ``webpack.config.js`` để chứa các tùy chọn build, để đơn giản hóa ta sẽ rút gọn hết mức có thể, ``webpack.config.js`` sẽ trông như sau:
+* xxx/demo
+  		- package.json
+  		- webpack.config.js
+  		- node_modules (binary root)
+  		- src
+  			- app.js
+  			- behavior
+  				- action.js
+  				- blink.js
+  				- spin.js
+  			- body
+  				- body.js
+  				- circle.js
+  				- square.js
+  				- dog.js
+  		- dest
+  			- dog.png
+  			- index.html
+
+Webpack sử dụng file `webpack.config.js` để chứa các tùy chọn build, để đơn giản hóa ta sẽ rút gọn hết mức có thể, `webpack.config.js` sẽ trông như sau:
+
 ```javascript
 var path = require('path');
 module.exports = {
@@ -112,11 +116,11 @@ module.exports = {
 };
 ```
 
+File này chỉ ddơn giản là bảo webpack dịch file `src/app.js` ra file 
+`dest/main.js` và dùng babel để chuyển es2015 sang es5 thôi.
 
-File này chỉ ddơn giản là bảo webpack dịch file ``src/app.js`` ra file 
-``dest/main.js`` và dùng babel để chuyển es2015 sang es5 thôi.
+tiếp theo ta phải có file `index.html` để trình duyệt còn chạy vào, file này sexchuwas 1 caí khung rỗng và load file main.js vào.
 
-tiếp theo ta phải có file ``index.html`` để trình duyệt còn chạy vào, file này sexchuwas 1 caí khung rỗng và load file main.js vào.
 ```HTML
    <!doctype html>
     <html>
@@ -154,11 +158,12 @@ tiếp theo ta phải có file ``index.html`` để trình duyệt còn chạy v
     <script src="main.js"></script>
     </body>
     </html>
-
 ```
-he, suýt nữa quên công việc chính :D. Về phần javajcript file chính của ta là ``app.js`` file này sẽ import  các module khác  và tạo thành ứng dụng hoàn chỉnh.
 
-``src/app.js``
+he, suýt nữa quên công việc chính :D. Về phần javajcript file chính của ta là `app.js` file này sẽ import  các module khác  và tạo thành ứng dụng hoàn chỉnh.
+
+`src/app.js`
+
 ```javascript
 import Circle from "./body/circle.js";
 import Dog from "./body/dog.js";
@@ -210,7 +215,9 @@ class App{
 
 window.app = new App();
 ```
-``src/body/body.js``
+
+`src/body/body.js`
+
 ```javascript
 class Body{
     constructor(x, y){
@@ -265,7 +272,8 @@ class Body{
 export default Body;
 ```
 
-``src/circle.js``
+`src/circle.js`
+
 ```javascript
 import Body from "./body.js";
 
@@ -296,7 +304,8 @@ class Cicle extends Body{
 export default Cicle;
 ```
 
-``src/square.js``
+`src/square.js`
+
 ```javascript
 import Body from "./body.js";
 
@@ -326,10 +335,10 @@ class Square extends Body{
 }
 
 export default Square;
-
 ```
 
-``src/dog/js``
+`src/dog/js`
+
 ```javascript
 import Body from './body.js';
 
@@ -357,7 +366,8 @@ class Dog extends Body{
 export default Dog;
 ```
 
-``src/behavior/action.js``
+`src/behavior/action.js`
+
 ```javascript
 class Action {
     constructor(speed){
@@ -383,7 +393,8 @@ class Action {
 export default Action;
 ```
 
-``src/behavior/blink.js``
+`src/behavior/blink.js`
+
 ```javascript
 import Action from './action.js';
 
@@ -415,7 +426,8 @@ class Blink extends Action{
 export default Blink;
 ```
 
-``src/behavior/spin.js``
+`src/behavior/spin.js`
+
 ```javascript
 import Action from './action.js';
 
@@ -449,7 +461,8 @@ class Spin extends Action{
 export default Spin;
 ```
 
-``src/behavior/bounce.js``
+`src/behavior/bounce.js`
+
 ```javascript
 import Action from './action.js';
 
@@ -495,15 +508,19 @@ Cuối cùng bạn chạy
 ```shell
 webpack
 ```
-Và bùm!!! bất ngờ chưa? ứng dụng của bạn đã được build ra một file duy nhất ``dest/main.js`` bạn hãy mở  file index.html trình duyệt và tận hưởng thành quả thôi.
 
-### Thành quả 
+Và bùm!!! bất ngờ chưa? ứng dụng của bạn đã được build ra một file duy nhất `dest/main.js` bạn hãy mở  file index.html trình duyệt và tận hưởng thành quả thôi.
+
+### Thành quả
+
 Sau một thời gian code miệt mài cuối cùng ta sẽ có thành quả sau:
+
 <iframe src="https://htmlpreview.github.io/?https://github.com/minhlucvan/demo-js-module/blob/main/dest/index.html" width="100%" height="350" />
 
 bạn có thể tải mã nguồn tại [đây](https://github.com/minhlucvan/demo-js-module).
 
-## Lời kết 
+## Lời kết
+
 Có lẽ bài này code hơi dài nhỉ, cái mình muốn show ở đây là cách chúng ta tạo ra app chứ không phải kết quả, mấy cái hiệu ứng nhảm shit này bất cứ ai phẩy tay cái cũng ra được. bạn sẽ thấy cách này tốt khi bạn bắt đầu xây dựng những sản phẩm thực sự, rồi càn maintain nhiều refactor thường xuyên mà nhân sự lại thay đổi liên tục.
 
 Cảm ơn các bạn đã theo dõi bài viết. xin hẹn gặp lại ở bài viết sau.
