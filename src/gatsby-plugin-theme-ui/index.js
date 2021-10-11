@@ -70,4 +70,4 @@ const theme = {
   },
 }
 
-export default toTailwind(theme)
+export default theme
