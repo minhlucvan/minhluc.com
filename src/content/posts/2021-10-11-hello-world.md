@@ -12,7 +12,7 @@ description: thực thự thì mình viết không được hay (hồi tốt ngi
   6 điểm văn 😢) nhưng được cái thích viết. Đôi khi đang đi trên đường hoặc đọc
   một tờ báo là cải gặp được chuyện nọ, chuyện kia cũng muốn mình có một blog
   riêng để bày tỏ ý kiến của mình 😎.
-featuredImage: https://minhlucvan.github.io/2016/06/12/Hello-world/hello.jpg
+featuredImage: /assets/hello.jpeg
 ---
 thực thự thì mình viết không được hay (hồi tốt ngiệp cấp 3 được có 6 điểm văn 😢) nhưng được cái thích viết. Đôi khi đang đi trên đường hoặc đọc một tờ báo là cải gặp được chuyện nọ, chuyện kia cũng muốn mình có một blog riêng để bày tỏ ý kiến của mình 😎.
 
