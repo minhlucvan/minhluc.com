@@ -1,12 +1,11 @@
 ---
 template: index-page
 slug: /
-title: Wyatt Morriss
-tagline: Graphic Designer
+title: Minh Luc
+tagline: Full-stack developer
 featuredImage: /assets/toa-heftiba-0rlfirsdvzu-unsplash.jpg
 cta:
   ctaText: Know more
   ctaLink: /about
 ---
-
-He is a award winning gaming graphic designer, based in sunny side of California. Working as Principal designer at Bethesda
+Hi, my name is Minh you can call me Mike. Currently I am working as a full-stack developer and also blockchain developer as well. beside working I am seeking for freedom physically and mentally.
