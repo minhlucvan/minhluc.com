@@ -61,7 +61,9 @@ mỗi khi một action tới reducer, thay vì update chính state cũ chúng ta
 
 When you’re making developer tools, you need to be able to write them generically. A user should be able to just drop the tool in without having to custom fit their own code around it.
 
-For this to work, you need extension points… places where the code expects to have things added to it.
+Khi tạo một thư viện, chúng ta phải đảm bảo rằng viết một cách tổng quan nhất có thể, mỗi người dùng có thể sử dụng thư viện để giải quết các vấn đề của mình mà không cần phải sửa code.
+
+Để đạt được điều đó một trong các gải pháp mở rộng khả thi đó chính là **add-on**, 
 
 An example is logging. Let’s say you want to console.log() every action as it comes in, and then console.log() the state that results from it. In Flux, you’d have to subscribe to the dispatcher’s updates and to updates from each store. But that’s custom code, not something a third-party module can easily do.
 
