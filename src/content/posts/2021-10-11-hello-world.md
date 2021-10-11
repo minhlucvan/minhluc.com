@@ -1,7 +1,7 @@
 ---
 template: blog-post
 title: Hello world
-slug: hello-world
+slug: /hello-world
 tags:
   - life
   - share
