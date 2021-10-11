@@ -27,7 +27,7 @@ Vậy điểm khác biệt ở đây là gì? tác giả của Redux @Dan Abramo
 
 @Dan Abramov muốn hot reloading (code và nhìn thấy thay đổi luôn) và time travel debugging (). Nhưng có một số vấn đề khiến cho developer tools khó làm việc với Flux.
 
-> **Vấn đề 1: code của Store không thể reload nếu không xóa trạng thái**
+**Vấn đề 1: code của Store không thể reload nếu không xóa trạng thái**
 
 Trong Flux, Strore bao gồm 2 thứ:
 
@@ -42,22 +42,22 @@ Chứa cả 2 thứ trong cùng một đối tưọng chính là chìa khóa cho
 
 Tách biệt hai chức năng, một đối tượng sẽ lưu trạng thái, đối tưọng này không đưọc reload. Một đối tượng khác bàn gồm tất cả các trạng thái thai đổi logic, đối tưọng này có thể đưọc reload nó khống hề giữ trạng thái nào cả.
 
-> **Vấn đề 2: Trạng thái có thể bị ghi đè bởi mỗi một action**
+**Vấn đề 2: Trạng thái có thể bị ghi đè bởi mỗi một action**
 
-In time travel debugging, you keep track of each version of a state object. That way, you can go back to an earlier state.
+với **redux** chúng ta sẽ có một cách debug rất bá đạo đó chính là  **travel debugging**, có nghĩa là chúng ta có thể nhảy đến bất kỳ phiên bản nào của state và tìm hiểu xem sự thay đổi của state qua mỗi action là như thế nào, góp phần đắc lực cho quá trình debug.
 
-Each time the state is changed, you need to add the old state to an array of previous state objects. But because of the way JavaScript works, simply adding the variable to the array won’t work. This doesn’t create a snapshot of the object, it just creates a new pointer to the same object.
+để làm debug được như vậy chúng ta chỉ cần cài **redux devtoools** và jump đến bất kỳ state nào bạn muốn.
 
-To make it work, each version needs to be an entirely separate object so that you aren’t accidentally changing past versions.
+Một concept vô cùng quan trọng trong redux đó chính là **immutability**   nôm na đó chính là giữ cho state độc lập giữa các lần thay đổi.
 
 ![](/assets/4.png)
 
-**Solution**
-When an action comes in to the store, don’t handle it by changing the state. Instead, copy the state and make changes to the copy.
+**Giải *
+mỗi khi một action tới reducer, thay vì update chính state cũ chúng ta sẽ tạo một phiên bản copy của state cũ và tiến hành tay đổi trên state mới đó.
 
 ![](/assets/5.png)
 
-> **Problem 3: There aren’t good places for third-party plugins to jump in**
+**Vấn đề 3: Các plugin của bên thứ 3 sẽ hook vào hệ thống như thế nào**
 
 When you’re making developer tools, you need to be able to write them generically. A user should be able to just drop the tool in without having to custom fit their own code around it.
 
@@ -90,9 +90,7 @@ Redux keeps the action creator from Flux. Whenever you want to change the state 
 
 As I said in the article on Flux, I think of the action creator as a telegraph operator. You go to the action creator knowing basically what message you want to send, and then the action creator formats that in a way that the rest of the system can understand.
 
-
 **Unlike Flux, action creators in Redux do not send the action to the dispatcher. Instead, they return a formatted action object.**
-
 
 ### The Store
 
