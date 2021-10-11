@@ -23,4 +23,5 @@ Blog cũng là một cách để hiểu rõ hơn về bản thân, có một dan
 > Writing is the only way I have to explain my own life to myself
 
 Pat ConroyMy Reading Life
+
 hy vọng mình sẽ có đủ thời gian và nhiệt huyết để duy trì blog này.
