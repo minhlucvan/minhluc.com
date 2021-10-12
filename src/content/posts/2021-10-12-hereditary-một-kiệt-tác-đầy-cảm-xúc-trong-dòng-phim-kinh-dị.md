@@ -1,7 +1,7 @@
 ---
 template: blog-post
 title: Hereditary một kiệt tác đầy cảm xúc trong dòng phim kinh dị
-slug: Hereditary-mot-kiet-tac-day-cam-xuc-trong-dong-phim-kinh-di
+slug: /hereditary-mot-kiet-tac-day-cam-xuc-trong-dong-phim-kinh-di
 tags:
   - film
   - review
