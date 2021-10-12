@@ -7,7 +7,7 @@ Cảm ơn bạn đã dành thời gian để ghé qua góc nhỏ này, dù vô t
 
 Blog này được lập ra với mục đích hoàn toàn cá nhân, nhằm chia sẻ lại những câu chuyện trong công việc, cuộc sống và đầu tư của chính bản thân mình.
 
-![Toys](/assets/915.jpeg "Toys")
+![](/assets/915.jpeg)
 
 Cũng giống như những người trẻ khác, mình cũng đang loay hoay trên còn đường đã chọn, con đường tìm kiếm chính mình và tìm kiếm ý nghĩa của cuộc sống. Trên con đường đó đôi khi mình muốn ghi lại những suy nghĩ, những quan điểm của mình qua đó hiểu rõ hơn bản thân hơn và chia sẻ góc nhìn của mình với những người xung quanh.
 
