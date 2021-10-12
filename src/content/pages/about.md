@@ -18,3 +18,11 @@ Với xuất phát điểm là theo học Công nghệ phần mềm, cá nhân m
 * Chuyện nghề phần mềm
 * Sách và quan điểm cá nhân
 * Chuyện đầu tư
+
+Về câu chuyện đầu tư thực ra cũng là một cái duyên, trên con đường tìm kiếm sự tự do mình phát hiện ra đầu tư có thể giúp đỡ mình trong việc thay đổi tư duy, một nhà đầu tư sẽ cố gắng nhìn nhận sự sự việc đúng với bản chất vốn có của nó, bỏ qua cảm xúc của mình và cũng tránh xa hành xử của đám đông điều đó phần nào giống với quan niệm của mình về sự tự do. Bên cạnh đó đầu tư cũng là một cách giúp mình có được sự đảm bảo hơn về tài chính trên con đường của mình, Vậy nên đầu tư cũng là một trong những chủ đề mà mình muốn chia sẻ trên blog này.
+
+tất cả các bài viết cũng như quan điểm của mình đều chỉ là quan điểm cá nhân tại thời điểm viết, sẽ thật vinh dự nếu nhận được những đóng góp cũng như góc nhìn đa nhiều từ mọi người.
+
+hẹn gặp lại các bạn trong các bài viết sắp tới.
+
+From Minh Luc with love.
