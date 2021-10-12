@@ -3,7 +3,7 @@ template: index-page
 slug: /
 title: Minh Luc
 tagline: Full-stack developer
-featuredImage: /assets/50986889_532593017226726_492374501458544764_n.jpeg
+featuredImage: /assets/82556010_1558405044314955_6734939840355237888_n.jpg
 cta:
   ctaText: Know more
   ctaLink: /about
