@@ -13,6 +13,7 @@ description: Nối tiếp những tác phẩm kinh dị tuyệt vời trong năm
   lại có dịp thưởng thức một kiệt tác kinh dị nữa, đó chính là Hereditary (di
   truyền), Là  bộ phim đầu tay  của đạo diễn Ari Aster, một sản phẩm thành công
   nữa của studio A24.
+featuredImage: /assets/x1080.jpeg
 ---
 Nối tiếp những tác phẩm kinh dị tuyệt vời trong năm nay như **Annihilation** và **A Quiet Place** Mùa hè vừa rồi, khán giả yêu điện ảnh thế giới lại có dịp thưởng thức một kiệt tác kinh dị nữa, đó chính là **Hereditary** (di truyền), Là  bộ phim đầu tay  của đạo diễn **Ari Aster**, một sản phẩm thành công nữa của studio A24.
 
