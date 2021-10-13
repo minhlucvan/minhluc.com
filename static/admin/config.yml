@@ -22,7 +22,7 @@ collections:
       Create awesome content here.
     folder: "src/content/posts"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    summary: "{{title}} — {{year}}/{{month}}/{{day}}"
+    summary: "{{slug}} — {{year}}/{{month}}/{{day}}"
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {
@@ -51,6 +51,7 @@ collections:
           hint: "Blog post category",
           options: ["Công nghệ", "Quan điểm", "Crypto", "Đầu tư"]
         }
+      - { label: "Focus Keyword", name: "yoast_keyword", widget: "string" }
       - {
           label: "Publish Date",
           name: "date",
