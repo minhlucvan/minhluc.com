@@ -49,7 +49,8 @@ collections:
           name: "category",
           widget: "select",
           hint: "Blog post category",
-          options: ["Công nghệ", "Quan điểm", "Crypto", "Đầu tư"]
+          options: ["Chuyện làm phần mềm", "Chuyện đầu tư", "Sách và quan điểm", "Chuyện lập trình", "Chuyện linh tinh"],
+          default: "Chuyện linh tinh"
         }
       - { label: "Focus Keyword", name: "yoast_keyword", widget: "string" }
       - {

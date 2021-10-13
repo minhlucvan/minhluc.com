@@ -21,11 +21,11 @@ const styles = {
   },
 }
 
-export const blogTagQuery = graphql`
-  query blogTagQuery($skip: Int!, $limit: Int!, $tag: String!) {
+export const blogCategoryQuery = graphql`
+  query blogCategoryQuery($skip: Int!, $limit: Int!, $category: String!) {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { template: { eq: "blog-post" }, tags: { in: [$tag]} } }
+      filter: { frontmatter: { template: { eq: "blog-post" }, category: { eq: $category } } }
       limit: $limit
       skip: $skip
     ) {
@@ -84,11 +84,11 @@ const Pagination = props => (
     </ul>
   </div>
 )
-class BlogTag extends React.Component {
+class BlogCategory extends React.Component {
   render() {
     const { data } = this.props
     const { currentPage, numPages, tag } = this.props.pageContext
-    const blogSlug = `/blog/tags/${tag}/`
+    const blogSlug = `/blog/categories/${tag}/`
     const isFirst = currentPage === 1
     const isLast = currentPage === numPages
     const prevPage =
@@ -124,4 +124,4 @@ class BlogTag extends React.Component {
   }
 }
 
-export default BlogTag
+export default BlogCategory

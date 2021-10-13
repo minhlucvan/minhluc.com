@@ -28,10 +28,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const posts = result.data.allMarkdownRemark.edges
 
   const tagsMap = {};
+  const categoryMap = {};
 
   for (const post of posts) {
     const { frontmatter } = post.node;
-    const { tags } = frontmatter;
+    const { tags, category } = frontmatter;
 
     if (tags) {
       for (const tag of tags) {
@@ -44,9 +45,20 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         tagsMap[tag].posts.push(post);
       }
     }
+
+    if (category) {
+      if (!categoryMap[category]) {
+        categoryMap[category] = {
+          category,
+          posts: []
+        }
+      }
+      categoryMap[category].posts.push(post);
+    }
   }
 
   const tags = Object.values(tagsMap);
+  const categories = Object.values(categoryMap);
 
   // Handle errors
   if (result.errors) {
@@ -97,6 +109,39 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       },
     })
   })
+
+  // create blog-categories pages
+  const blogCategories = path.resolve(`./src/templates/blog-categories.js`)
+
+  createPage({
+    path: '/blog/categories',
+    component: blogCategories,
+    context: {
+      categories,
+    }
+  })
+
+  // create blog-category pages
+  const blogCategory = path.resolve(`./src/templates/blog-category.js`)
+
+  for (const cat of categories) {
+    const blogPostsCategoryCount = cat.posts.length;
+    const numPages = Math.ceil(blogPostsCategoryCount / postsPerPage)
+
+    Array.from({ length: numPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? `/blog/categories/${cat.category}` : `/blog/categories/${cat.category}/${i + 1}`,
+        component: blogCategory,
+        context: {
+          category: cat.category,
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          numPages,
+          currentPage: i + 1,
+        },
+      })
+    })
+  }
 
   // create blog-tags pages
   const blogTags = path.resolve(`./src/templates/blog-tags.js`)
