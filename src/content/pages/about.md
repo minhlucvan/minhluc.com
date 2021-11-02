@@ -11,9 +11,9 @@ Blog này được lập ra với mục đích hoàn toàn cá nhân, nhằm chi
 
 Cũng giống như những người trẻ khác, mình cũng đang loay hoay trên còn đường đã chọn, con đường tìm kiếm chính mình và tìm kiếm ý nghĩa của cuộc sống. Trên con đường đó đôi khi mình muốn ghi lại những suy nghĩ, những quan điểm của mình qua đó hiểu rõ bản thân hơn và chia sẻ góc nhìn của mình với những người xung quanh.
 
-Với xuất phát điểm là theo học Công nghệ phần mềm, cá nhân mình bước vào ngành phần mềm khá sớm và cũng trải qua nhiều pha sấp mặt với ngành này, giờ nhìn lại tuy kinh nghiệm cũng chưa được nhiều nhưng phần nào cũn hiểu được cách vận hành của cái ngành này và hu vọng có thể chia sẻ lại phần nào những gì mình đã trải qua.
+Với xuất phát điểm là theo học Công nghệ phần mềm, cá nhân mình bước vào ngành phần mềm khá sớm và cũng trải qua nhiều pha sấp mặt với ngành này, giờ nhìn lại tuy kinh nghiệm cũng chưa được nhiều nhưng phần nào cũn hiểu được cách vận hành của cái ngành này và hy vọng có thể chia sẻ lại phần nào những gì mình đã trải qua.
 
-Đó là câu chuyện nghề nghiệp,  còn mục tiêu trong cuộc sống của mình là tìm kiếm sự tự do, tự do trong suy nghĩ, tự do trong tâm hồn và tự do về vật chất vậy nên chủ đề này mình cũng có khá nhiều điều muốn chia sẻ.
+Đó là câu chuyện nghề nghiệp,  còn mục tiêu trong cuộc sống của mình là tìm kiếm sự tự do, tự do trong suy nghĩ, tự do trong tâm hồn và tự do về vật chất vậy nên chủ đề đầu tư mình cũng có khá nhiều điều muốn chia sẻ.
 
 Về câu chuyện đầu tư thực ra cũng là một cái duyên, trên con đường tìm kiếm sự tự do mình phát hiện ra đầu tư có thể giúp mình thay đổi tư duy, một nhà đầu tư sẽ cố gắng nhìn nhận sự sự việc đúng với bản chất vốn có của nó, bỏ qua cảm xúc chủ quan và cũng tránh xa hành xử của đám đông điều đó phần nào  tương đồng với quan niệm của mình về sự tự do. Bên cạnh đó đầu tư cũng là một cách giúp mình có được sự đảm bảo hơn về tài chính, Vậy nên đầu tư cũng là một trong những chủ đề mà mình muốn chia sẻ trên blog này.
 
