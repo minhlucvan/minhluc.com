@@ -14,7 +14,7 @@ description: Minh cá câu trả sẽ là chưa, bản thân mình cũng vậy n
   nữa, nên nếu lơ một ngày điều không may xảy ra liệu chúng ta có thể đón nhận
   sự việc trên một tâm thế an nhiên được hay không. Trước tiên chúng ta phải đặt
   cho mình.
-featuredImage: https://s3.us-west-2.amazonaws.com/secure.notion-static.com/9c9e13a0-7c15-4e18-a346-87396e5fa4cd/8D2B1B5A-3A73-47E5-ABFB-BA2CE386A84B.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211130T151335Z&X-Amz-Expires=86400&X-Amz-Signature=203e1b38167dbc21c8192c623508931e70bdeccab83a7c149a0a756b24f8c6df&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%228D2B1B5A-3A73-47E5-ABFB-BA2CE386A84B.webp%22&x-id=GetObject
+featuredImage: /assets/8d2b1b5a-3a73-47e5-abfb-ba2ce386a84b.webp
 ---
 
 
@@ -46,14 +46,14 @@ Có lẽ, chúng ta sẽ chẳng bao giờ thực sự sẵn sàng cho điều �
 
 Mình có nghe ở đâu đó cuộc đời rằng một chuỗi các quyết định và hậu quả của chúng, có những quyết định dù đúng dù sai cũng có thể làm thay đổi hoàn hoàn cuộc đời của chúng ta. Vậy nên hãy sống làm sao để đến cuối cùng khi nhìn lại chúng không phải hổi tiếc vì những việc chúng ta đã làm và cả những việc chúng ta chưa có cơ hội làm.
 
-![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b138802c-4671-4ae7-860c-63cff46484b4/E8C04AE2-4268-4C8A-90AE-5007E25680D6.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211130T150929Z&X-Amz-Expires=86400&X-Amz-Signature=0b1f474dd690c564dd6866cd17cd79fc3ad44f2b85ce2c20b413ab09e1e9cb0e&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22E8C04AE2-4268-4C8A-90AE-5007E25680D6.jpeg%22&x-id=GetObject)
+![](https://quotefancy.com/media/wallpaper/1600x900/167116-John-C-Maxwell-Quote-Life-is-a-matter-of-choices-and-every-choice.jpg)
 
 Vì cuộc đời là một chuỗi những lựa chọn nên nếu mỗi lựa chọn bạn đưa ra làm sao để trong tương lai ít phải hối tiếc nhất thì chúng quy lại chúng ta sẽ có một cuộc đời ít hối tiếc nhất. Mỗi khi phải đưa ra lựa chọn mình sẽ cân nhắc theo hướng đó và mô hình đưa ra quyết định như vậy dược gọi là **Reget Minimalzation.** Thực sự cách này đã giúp ích mình rất nhiều mỗi khi phải đưa ra quyết định thậm chí là những quyết định lớn. Việc tự đặt mình vào vị trí của bản thân trong tương lai để nhìn lại quyết định trong hiện tại có thể nhìn sự việc với một gióc độ khách quan hơn rất nhiều và điều quan trọng nhất mà mình phải đánh giá đó là nếu tôi đưa ra quết định đó thì trong tương lai tôi có điều gì phải hối tiếc hay không.
 
 
 Tái bút: cảm ơn người bạn đã cho mình thêm niềm tin để trận trọng cuộc sống, trận trọng bản thân và những người xung quanh.
 
-[](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2472dc20-0fac-42d2-8ea4-413a2968c4c5/0FDB8FE3-7FDF-4AA6-AE06-E4C0413B5F99.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211130T151159Z&X-Amz-Expires=86400&X-Amz-Signature=65c00892ca0e213b085a7ff70e94ee3414945324b1fdd8ebc7d839a49b45db36&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%220FDB8FE3-7FDF-4AA6-AE06-E4C0413B5F99.jpeg%22&x-id=GetObject)
+![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2472dc20-0fac-42d2-8ea4-413a2968c4c5/0FDB8FE3-7FDF-4AA6-AE06-E4C0413B5F99.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211130T151159Z&X-Amz-Expires=86400&X-Amz-Signature=65c00892ca0e213b085a7ff70e94ee3414945324b1fdd8ebc7d839a49b45db36&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%220FDB8FE3-7FDF-4AA6-AE06-E4C0413B5F99.jpeg%22&x-id=GetObject)
 
 From Minh Luc with love.
 
