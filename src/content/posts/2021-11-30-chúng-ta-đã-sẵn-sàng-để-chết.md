@@ -16,8 +16,6 @@ description: Minh cá câu trả sẽ là chưa, bản thân mình cũng vậy n
   cho mình.
 featuredImage: /assets/8d2b1b5a-3a73-47e5-abfb-ba2ce386a84b.webp
 ---
-
-
 ### Liệu Bạn đã sẵn sàng để chết?
 
 Minh cá câu trả sẽ là chưa, bản thân mình cũng vậy nếu phải ra đi chắc chắn sẽ  còn rất nhiều hối tiếc, còn rất nhiều người mình muốn báo đáp, rất nhiều điều chưa làm, rất nhiều nơi chưa đi và rất nhiều người chưa gặp. Nhưng cuộc vốn vô thường, chẳng ai biết chúng ta còn bao nhiêu thời gian nữa, nên nếu lỡ một ngày điều không may xảy ra liệu chúng ta có thể đón nhận sự việc trên một tâm thế an nhiên được hay không. 
@@ -54,11 +52,8 @@ Mỗi quyết định được đưa ra trong đời đều có ảnh hưởng n
 
 Nếu mỗi quyết định đều đưa ra trong tâm thế sao cho khi mình trong tương lai nhìn lại cảm thấy ít tiếc nuối nhất có thể, chung quy lại chúng ta sẽ có một cuộc đời ít hối tiếc nhất. Mỗi khi phải đưa ra lựa chọn mình sẽ cân nhắc theo hướng đó và mô hình đưa ra quyết định như vậy dược gọi là **Reget Minimalzation** tạm dịch là giảm thiểu hối hận. Thực sự phương pháp này đã giúp ích mình rất nhiều mỗi khi phải đưa ra quyết định thậm chí là những quyết định lớn. Việc tự đặt mình vào vị trí của bản thân trong tương lai để để nhìn nhận sự việc và quyết định trong hiện tại có thể giúp chúng ta nhìn sự việc với một góc độ khách quan hơn rất nhiều và điều quan trọng nhất là chúng ta đã chấp nhận những hậu quả của quyết định đó ngay từ giây phút đưa ra lựa chọn rồi. Phương pháp này thực sự đã giúp ích rất nhiều mỗi khi bản thân mình phải đưa ra một quyết định nào đó. 
 
-
 ![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2472dc20-0fac-42d2-8ea4-413a2968c4c5/0FDB8FE3-7FDF-4AA6-AE06-E4C0413B5F99.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20211130%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20211130T151159Z&X-Amz-Expires=86400&X-Amz-Signature=65c00892ca0e213b085a7ff70e94ee3414945324b1fdd8ebc7d839a49b45db36&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%220FDB8FE3-7FDF-4AA6-AE06-E4C0413B5F99.jpeg%22&x-id=GetObject)
 
-Tái bút: cảm ơn người bạn đã cho mình thêm niềm tin để trận trọng cuộc sống, trận trọng bản thân và những người xung quanh.
-
+Tái bút: cảm ơn người bạn đã cho mình thêm niềm tin để trận trọng cuộc sống, trân trọng bản thân và những người xung quanh.
 
 From Minh Luc with love.
-
