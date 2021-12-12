@@ -38,13 +38,13 @@ Thật ra những bài toán trong đầu tư không hề khó, lý do mà số 
 
 ### Kiểm soát tâm lý
 
-![](https://i0.wp.com/www.mindfithypnosis.com/wp-content/uploads/control-emotions-therapy.jpg)
+![](/assets/getty_175280847_9707209704500141_66113.jpeg)
 
 Như đã nói ở trên thì tâm lý và kỷ luật chính là hai cản trở lớn nhất khi mới bước chân vào nghiệp đầu tư, trong quá trình đầu tư nhà đầu tư xe phải chiến đấu với chính bản thân mình để luôn luôn lý trí. Hai loại cảm xúc tiêu cực với nhà đầu ư chính là sự tham lam và sự sợ hãi. kiểm soát được sự sợ hãi và tham lam của bản thân chính là sự đánh dấu bước chuyển mình của một nhà đầu tư chuyên nghiệp.
 
 ### Tư duy độc lập
 
-![](https://thommatngaymua.com/wp-content/uploads/2021/12/black-sheep-la-gi.jpg)
+![](/assets/black-sheep-la-gi.jpeg)
 
 Có một sự thật trong các trò chơi tài chính đó là đám đông luôn thua, điều đó đồng nghĩa là bạn bắt buộc phải chọn một trong 2 phe đám đông và phần còn lại. những nhà đầu tư thành công sẽ phải biết cách tư duy độc lập tránh xa hành vi của đám đông, để làm được điều này bắt buộc bản phải hiểu về tâm lý học hành vi của đám đông sau đó đối chiếu lại bản thân và cố gắng nhìn vấn đề đúng với bản chất của nó mà khôn dựa vào cảm xúc hành vi của những người dung quanh. Có được cho mình một tư duy độc lập như thế chắc chắn bạn sẽ không chỉ thành công trong lĩnh vực đầu tư mà chắc chắn thế giới quan của chúng ta sẽ trở nên độc lập hơn và ít bị phụ thuộc vào đám đông cũng như truyền thông dắt mũi.
 
