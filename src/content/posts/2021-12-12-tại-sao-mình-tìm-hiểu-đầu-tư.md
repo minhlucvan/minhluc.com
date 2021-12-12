@@ -14,7 +14,7 @@ description: Khi nhắc đến đầu tư ắt hẳn không ít người vẫn g
   không nhỏ vào sự vận hành của nền kinh tế, góp phần luân chuyển dòng tiền một
   cách nhanh chóng và sự chính sự luân chuyển dòng tiền này chính là trái tim
   của một nền kinh tế.
-featuredImage: https://unctad.org/sites/default/files/2020-08/Investment-policy_800x450_0.jpg
+featuredImage: /assets/investment-policy_800x450_0.jpeg
 ---
 Khi nhắc đến đầu tư ắt hẳn không ít người vẫn gắn với những định kiến về nghành này là không tạo ra giá trị gì cho xã hội, là zero sum game. Về bản chất nền hoạt động đầu cơ cũng như đầu tư tài chính đóng góp một phần không nhỏ vào sự vận hành của nền kinh tế, góp phần luân chuyển dòng tiền một cách nhanh chóng và sự chính sự luân chuyển dòng tiền này chính là trái tim của một nền kinh tế.
 
@@ -32,7 +32,7 @@ Một khi đã bước chân vào con đường đầu tư, ít nhiều bạn s�
 
 ### Sự kỷ luật
 
-![](https://cafebiz.cafebizcdn.vn/2020/2/20/dxrrebwwkae3elg-1582213544877924480784-15822135722411539696147.png)
+![](/assets/images1.jpeg)
 
 Thật ra những bài toán trong đầu tư không hề khó, lý do mà số đông mọi người đều không kiếm được tiền từ thị trường chính là do hai yếu tố tâm lý và kỷ luật hai yếu tố mang tính bản năng này đã dẫn phần đông những người tham gia vào thị trường đều không thể chiến thắng. trong các cuộc chơi tài chính nếu bạn gửi cho mình được một cái đầu lạnh và hành xử một cách lý trí và kỷ luật thì bạn đã chiến thắng một nửa rồi.
 
@@ -42,7 +42,7 @@ Thật ra những bài toán trong đầu tư không hề khó, lý do mà số 
 
 Như đã nói ở trên thì tâm lý và kỷ luật chính là hai cản trở lớn nhất khi mới bước chân vào nghiệp đầu tư, trong quá trình đầu tư nhà đầu tư xe phải chiến đấu với chính bản thân mình để luôn luôn lý trí. Hai loại cảm xúc tiêu cực với nhà đầu ư chính là sự tham lam và sự sợ hãi. kiểm soát được sự sợ hãi và tham lam của bản thân chính là sự đánh dấu bước chuyển mình của một nhà đầu tư chuyên nghiệp.
 
-###  Tư duy độc lập
+### Tư duy độc lập
 
 ![](https://thommatngaymua.com/wp-content/uploads/2021/12/black-sheep-la-gi.jpg)
 
